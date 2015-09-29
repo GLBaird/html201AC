@@ -1,0 +1,22 @@
+var friends = ["Bob", "Betty", "mary", "Evil sid"];
+
+var person = new Object();
+person.surname = "Boib";
+person.forename = "Bob";
+person.telephone = ["100", "200", "300"];
+
+person.telephon[1];
+
+
+var person = {
+  surname: "Boib",
+  forename: "Bob",
+  telephone: [
+    { type: "mobile", number: "08760 12345"},
+    { type: "home", number: "020 12345"},
+    { type: "work", number: "020 3445456"}
+  ]
+}
+
+
+person.telephone[0].number
