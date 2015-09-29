@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Drag and Drop HTML</title>
+    <style media="screen">
+      #red {
+        background-color: red;
+        width: 200px;
+        height: 100px;
+        cursor: move;
+      }
+
+      #green {
+        background-color: green;
+        width: 500px;
+        height: 500px;
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+      }
+    </style>
+    <script type="text/javascript">
+      function drop(event) {
+        event.preventDefault();
+        alert("Dropped");
+        var red = document.getElementById('red');
+        var green = document.getElementById('green');
+        green.appendChild(red);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Drag and drop example</h1>
+    <p>Drag the red box onto the green box</p>
+    <div id="red" draggable="true"> </div>
+    <div id="green" ondrop="drop(event);" ondragover="event.preventDefault();"> </div>
+  </body>
+</html>
