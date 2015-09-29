@@ -1,0 +1,90 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  background: #EFEFEF;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #444;
+  color: white;
+  box-shadow: 0 2px 4px #999;
+}
+
+header h1 {
+  font-size: 1em;
+  font-weight: normal;
+  text-align: center;
+}
+
+header button {
+  position: absolute;
+  top: 0.5em;
+  left: 1em;
+}
+
+section#side_panel {
+  position: absolute;
+  top: 3em;
+  left: 0;
+  bottom: 0;
+  width: 20em;
+  background: white;
+  z-index: 20;
+  box-shadow: 3px 0px 5px #999;
+  margin-left: -21em;
+  -webkit-transition: margin-left 1s;
+  -moz-transition: margin-left 1s;
+  -o-transition: margin-left 1s;
+  transition: margin-left 1s;
+}
+
+.show {
+  margin-left: 0 !important;
+}
+
+main {
+  position: absolute;
+  top: 3em;
+  right: 1em;
+  bottom: 1em;
+  left: 1em;
+  background: white;
+  border: 1px solid black;
+  z-index: 10;
+}
+
+section > h2:first-child, main > h2:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #999;
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0 0 1em 0;
+}
+
+.toolbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #999;
+  text-align: right;
+  padding: 0.5em 1em;
+}
+
+.toolbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toolbar li {
+  display: inline-block;
+}

@@ -1,0 +1,12 @@
+CACHE MANIFEST
+# 28/09/2015 v6.0
+
+CACHE:
+index.html
+jquery-1.11.3.min.js
+jquery-1.11.3.min.map
+script.js
+styles.css
+
+NETWORK:
+*

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Web App Interface</title>
+
+  <!-- Load Frameworks -->
+  <script src="jquery-1.11.3.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <button onclick="togglePanel()">Toggle Side</button>
+    <h1>Web App Example</h1>
+  </header>
+
+  <section id="side_panel">
+    <h2>Side Panel</h2>
+    <article class="panel">
+      this is the content of the panel
+    </article>
+    <div class="toolbar">
+      <ul>
+        <li>
+          <button>Option1</button>
+        </li>
+        <li>
+          <button>Option2</button>
+        </li>
+        <li>
+          <button>Option3</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <main>
+    <h2>Main App Work Area</h2>
+    content goes here...
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
