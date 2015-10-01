@@ -9,28 +9,37 @@
     body {
       text-align: center;
       font-family: sans-serif;
-      height: 2000px;
+      margin: 0;
+    }
+
+    .container {
+      height: 100vh;
       -webkit-perspective: 1000px;
+      overflow-y: auto;
     }
 
     .box {
-      width: 300px;
-      height: 150px;
-      background: #999;
-      padding: 1em;
+      padding: 100vh 0;
       position: absolute;
-      left: 50%;
-      margin-left: -150px;
-      box-sizing: border-box;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+    }
+
+    .background {
+      background: rgba(150,150,150, 0.5);
+      padding: 1em;
+      display: inline-block;
     }
 
     .box1 {
-      top: 500px;
+      margin-top: 10em;
       -webkit-transform: translateZ(0px);
     }
 
     .box2 {
-      top: 550px;
       -webkit-transform: translateZ(-1000px);
     }
   </style>
@@ -40,16 +49,23 @@
   <h1>Parallax Depth Example</h1>
 
   <div class="container">
+
     <div class="box box1">
-      <h2>Box 1</h2>
-      <p>This will be closer to the camera
+      <div class="background">
+        <h2>Box 1</h2>
+        <p>This will be closer to the camera
+      </div>
     </div>
 
     <div class="box box2">
-      <h2>Box 2</h2>
-      <p>This will be further away!
+      <div class="background">
+        <h2>Box 2</h2>
+        <p>This will be further away!
+      </div>
     </div>
+
   </div>
+
 </body>
 
 </html>
