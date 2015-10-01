@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cube</title>
+  <style media="screen">
+
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotateY(0deg);
+      }
+      100% {
+        -webkit-transform: rotateY(360deg);
+      }
+    }
+
+
+    html, body { height: 98%; margin: 0; padding: 0; }
+    body {
+      background: #444;
+      color: white;
+      font-family: sans-serif;
+      background: #5b5b5b;
+      background: -moz-radial-gradient(center, ellipse cover, #5b5b5b 0%, #000000 100%);
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #5b5b5b), color-stop(100%, #000000));
+      background: -webkit-radial-gradient(center, ellipse cover, #5b5b5b 0%, #000000 100%);
+      background: -o-radial-gradient(center, ellipse cover, #5b5b5b 0%, #000000 100%);
+      background: -ms-radial-gradient(center, ellipse cover, #5b5b5b 0%, #000000 100%);
+      background: radial-gradient(ellipse at center, #5b5b5b 0%, #000000 100%);
+      filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', endColorstr='#000000', GradientType=1);
+    }
+
+    .camera {
+      border: 1px solid white;
+      position: absolute;
+      left: 10%;
+      right: 10%;
+      bottom: 1em;
+      top: 10em;
+      -webkit-perspective: 2000px;
+      -webkit-perspective-origin: 50% -50%;
+      overflow: hidden;
+    }
+
+    .cube-face {
+      width: 200px;
+      height: 200px;
+      border: 1px solid white;
+      padding: 1em;
+      border-radius: 20px;
+      background: #999;
+      opacity: 0.5;
+      text-shadow: 0 0 20px #EFEFEF;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -100px;
+      margin-top: -100px;
+      box-sizing: border-box;
+      font-size: 0.8em;
+    }
+
+    .face1 {
+      -webkit-transform: translateZ(-200px) translateY(300px);
+    }
+
+    .face2 {
+      -webkit-transform: translate3d(100px,300px,-300px) rotateY(90deg);
+    }
+
+    .face3 {
+      -webkit-transform: translateZ(-400px) translateY(300px) rotateY(180deg);
+    }
+
+    .face4 {
+      -webkit-transform: translate3d(-100px,300px,-300px) rotateY(-90deg);
+    }
+
+    .cube {
+      -webkit-animation: spin 5s linear infinite;
+      -webkit-transform-style: preserve-3d;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Cube Animation</h1>
+  <p>Here's an animating cube:</p>
+
+  <div class="camera">
+
+    <div class="cube">
+
+      <div class="cube-face face1">
+        <h2>Cube Face 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </div>
+
+      <div class="cube-face face2">
+        <h2>Cube Face 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </div>
+
+      <div class="cube-face face3">
+        <h2>Cube Face 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </div>
+
+      <div class="cube-face face4">
+        <h2>Cube Face 4</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
