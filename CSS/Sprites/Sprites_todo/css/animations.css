@@ -1,0 +1,22 @@
+/* Fire Animation */
+
+@keyframes fire {
+  100% {
+    background-position: -160px 0;
+  }
+}
+
+@keyframes walkRight {
+  100% {
+    background-position: -624px 0;
+  }
+}
+
+@keyframes walkLeft {
+  0% {
+    background-position: 0 -150px;
+  }
+  100% {
+    background-position: -624px -150px;
+  }
+}
