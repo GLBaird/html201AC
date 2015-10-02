@@ -97,3 +97,79 @@ figure {
     margin: 1em 0;
     padding: 0;
 }
+
+@media screen and (max-width:570px) {
+  header {
+    text-align: center;
+    padding: 3em 1em 1em 1em;
+    background-position: center 1em;
+    font-size: 0.8em;
+  }
+
+  article, aside {
+    float: none;
+    width: auto;
+    margin: 1em 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  header {
+    padding-top: 5em;
+    background-position: center 3em;
+  }
+
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.5);
+    height: 2em;
+    overflow: hidden;
+    transition: height 1s;
+  }
+
+  nav.open {
+    height: 12em;
+  }
+
+  nav button {
+    display: inline-block;
+    color: transparent;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0.5rem 1rem;
+    background-image: url(../images/Menu-50.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  nav ul {
+    background: transparent;
+  }
+
+  nav li {
+    display: block;
+  }
+
+  nav a {
+    padding: 0.5em 1em 0.5em 3em;
+    text-align: left;
+    background-size: 1.2em;
+    background-position: 1em center;
+    transition: all 0.5s;
+  }
+
+  nav a:hover {
+    color: inherit;
+    background-size: 1.2em;
+    background-position: 1em center;
+    background-color: #e7ebff;
+  }
+}
