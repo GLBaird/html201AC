@@ -3,6 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Table Styles</title>
+
+    <style media="screen">
+
+      table {
+        width: 100%;
+        margin: 1em 0;
+        border: 1px solid black;
+        background: #EFEFEF;
+        text-align: center;
+        border-collapse: collapse;
+      }
+
+      td, th {
+        border: 1px solid black;
+        padding: 0.3em;
+      }
+
+      th {
+        background: black;
+        color: white;
+        font-weight: normal;
+      }
+
+      tr:nth-child(odd) {
+        background: #cde6f7;
+      }
+
+      td:nth-child(2), th:nth-child(2) {
+        text-align: left;
+      }
+
+    </style>
+
   </head>
   <body>
     <h1>Styling a table</h1>
@@ -11,10 +44,10 @@
     <table>
       <thead>
         <tr>
-          <th>Code</th>
+          <th style="width: 3em">Code</th>
           <th>Description</th>
-          <th>Cost</th>
-          <th>Stock</th>
+          <th style="width: 3em">Cost</th>
+          <th style="width:1em">Stock</th>
         </tr>
       </thead>
       <tbody>

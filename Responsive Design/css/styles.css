@@ -1,0 +1,99 @@
+body {
+    font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif;
+    font-size: large;
+    color: #444;
+    margin: 0;
+    background: #EFEFEF;
+}
+
+header {
+    background: #800;
+    padding: 1em 10%;
+    color: white;
+    background-image: url(../images/logo.jpg);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 10em;
+}
+
+nav button {
+    display: none;
+}
+
+nav ul {
+    background: white;
+    margin: 0 0 1em 0;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #444;
+    display: block;
+    padding: 3em 1em 0.5em 1em;
+    background-size: 2.4em;
+    background-repeat: no-repeat;
+    background-position: center 0.5em;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+nav a:hover {
+    color: transparent;
+    background-size: 4em;
+    background-position: center;
+}
+
+#home {
+    background-image: url("../images/Home Filled-100.png");
+}
+
+#about {
+    background-image: url("../images/About-100.png");
+}
+
+#news {
+    background-image: url("../images/News-100.png");
+}
+
+#contact {
+    background-image: url("../images/Email-100.png");
+}
+
+article {
+    float: right;
+    width: 50%;
+    margin: 1em 10% 1em 0;
+}
+
+aside {
+    float: left;
+    width: 25%;
+    margin: 1em 0 1em 10%;
+}
+
+footer {
+    clear: both;
+    background: #800;
+    padding: 1em 10%;
+    color: white;
+}
+
+figure img, figure video {
+    max-width: 100%;
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+}
+
+figure {
+    margin: 1em 0;
+    padding: 0;
+}

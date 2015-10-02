@@ -1,0 +1,180 @@
+body {
+    font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif;
+    font-size: large;
+    color: #444;
+    margin: 0;
+    background: #EFEFEF;
+}
+
+header {
+    background: #800;
+    padding: 1em 10%;
+    color: white;
+    background-image: url(../images/logo.jpg);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 10em;
+}
+
+nav button {
+    display: none;
+}
+
+nav ul {
+    background: white;
+    margin: 0 0 1em 0;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #444;
+    display: block;
+    padding: 3em 1em 0.5em 1em;
+    background-size: 2.4em;
+    background-repeat: no-repeat;
+    background-position: center 0.5em;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+nav a:hover {
+    color: transparent;
+    background-size: 4em;
+    background-position: center;
+}
+
+#home {
+    background-image: url("../images/Home Filled-100.png");
+}
+
+#about {
+    background-image: url("../images/About-100.png");
+}
+
+#news {
+    background-image: url("../images/News-100.png");
+}
+
+#contact {
+    background-image: url("../images/Email-100.png");
+}
+
+article {
+    float: right;
+    width: 50%;
+    margin: 1em 10% 1em 0;
+}
+
+aside {
+    float: left;
+    width: 25%;
+    margin: 1em 0 1em 10%;
+}
+
+footer {
+    clear: both;
+    background: #800;
+    padding: 1em 10%;
+    color: white;
+}
+
+figure img, figure video {
+    max-width: 100%;
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+}
+
+figure {
+    margin: 1em 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 580px) {
+    header {
+        text-align: center;
+        padding: 3em 10% 1em 10%;
+        background-size: 10em;
+        background-position: center 1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    header {
+        padding-top: 5em;
+        background-position: center 3em;
+    }
+    
+    nav li {
+        display: block;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background: rgba(255,255,255, 0.95);
+        height: 1.9em;
+        overflow: hidden;
+        -webkit-transition: height 1s;
+        -moz-transition: height 1s;
+        -o-transition: height 1s;
+        transition: height 1s;
+    }
+    
+    nav.show {
+        height: 13em;
+    }
+    
+    nav button {
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        color: transparent;
+        background-image: url(../images/Menu-50.png);
+        background-size: 2em;
+        background-repeat: no-repeat;
+        width: 2em;
+        height: 2em;
+        margin: 0.5em 0 0.5em 1em;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    nav ul {
+        text-align: left;
+        background: transparent;
+    }
+    
+    nav a {
+        padding: 0.5em 1em 0.5em 4em;
+        background-size: 1.5em;
+        background-position: 1.5em center;
+    }
+    
+    nav a:hover {
+        color: red;
+        background-size: 1.5em;
+        background-position: 1.5em center;
+    }
+    
+    article, aside {
+        float: none;
+        width: 80%;
+        margin: 1em 10%;
+    }
+}
+
+
+
+
