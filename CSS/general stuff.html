@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>General Stuff</title>
+  <style media="screen">
+    /* Hiding */
+
+    h1[aria-hidden='false'] {
+      display: none;
+    }
+
+    button.hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .accesible-hide {
+      position: absolute;
+      margin-left: -2000px;
+      width: 10px;
+    }
+    /* Forms */
+
+    input,
+    button,
+    textarea {
+      outline: none;
+    }
+
+    input[type='text'],
+    input[type='search'] {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 1em;
+      font-family: Helvetica, Arial, sans-serif;
+      padding: 0.3em 1em;
+      border-radius: 10px;
+      border: 1px solid #8a8a8a;
+      box-shadow: inset 1px 1px 2px #9d9d9d;
+      margin: 1em 0;
+      font-weight: lighter;
+    }
+
+    input[type='search'] {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAC/ElEQVRoQ+2Yi3HUMBBAkwogFeBUAKkAUwGkAi4VhFRAUgFQAZcKgAo4KoAOcCqAVJDsY6QZjZDsXUkGnyc7s+PzWZb2SfuRfHiwEjlcCcfBA4hbycdyfS76SrQT5f6Ze/ZDrr9FB9HPot/c/SxOULoivVhz7gAshgF0JQpkU7GCMOtvRTeVVmwdEKvVRCwguM9HUdynheB2Z6KsUrVoQXCj95nRbpwxGIRx3m2IFaCZAPRJ5v038v+HWhINCAO9SwxE8F6K7pRG9K49ySGWi5GJUnU/BcJMfmo8cG5iTt3KqgyPG42BdNL4u3MP/96t/GBma7MObsdKPgoMwi1PRIcSkjGQrXT4OuqUgWohfJfAMFGhXMvNpiUIs/416rDajxMGptysaLJyK0IGehkMTGADN4fgYmEC+CL3xKZJUiCkzF9RLy/kngHnkNTqH8lAxIxaUiBxpqJOdOoeyxoO8lpYZ8wZLAWylU7DIKdY4ctzCsWWouvFHPQpEFwo9Nk53cobHruXOSZTIKREUqOXoixiXL44FZPiGVctKZC76O2p6q8ebKJh1birBmFZn/5n1zJnylUH+xLSrznlawriIG523CqiM/38lP+74FmTgriaLQoTE28aKZIUxjmEXXYfdGyu6rybqxF0vIptPJBx0PNfyyqfmqyiLfzYivCM4KOmxMdRXKz2lMiWhBUnHr1wjGZM0/bdvzy1/ch9fKj5hJP7tERckq2KZAqETnNfPXby7EqUq0Z6acRXSq452cqDM01ncRsNyBgMzwZRZhPFPbzb4T64JauKdkoDi2C0INiAMQwSxozSNnMzM4wFBGuY1UvR+DOR1VJqBTLWjwnGCuINxm0ACr+0aGAAwMCda8zvJjClIN5o0mcv6mOAe38E8PFCzKDEUCq1NoGpBdGsgqZNNcxSQICtglkSSBXM0kCKYZYIUgSzVBANDFsZ4uqPLBlkDOavw9fSQVIwyRPkPoCEMNlj8L6AALMJYyKusvsEMrpDeADRbKD+ZZt7raKkM0Nerh8AAAAASUVORK5CYII=);
+      background-repeat: no-repeat;
+      background-size: 1.3em;
+      background-position: 0.6em center;
+      padding-left: 1.8em;
+    }
+    /* Styles all inputs except reset types */
+
+    input:not([type="reset"]) {}
+
+    button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"],
+    .btn {
+      border: 1px solid #999;
+      font-size: 1em;
+      padding: 0.3em 1em;
+      background: #EFEFEF;
+      border-radius: 10px;
+      box-shadow: 1px 1px 2px #bdbdbd;
+      color: #444;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.5s;
+    }
+
+    button:hover,
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    .btn:hover {
+      background-color: rgb(238, 178, 178);
+    }
+
+    button:active,
+    input[type="button"]:active,
+    input[type="submit"]:active,
+    input[type="reset"]:active,
+    .btn:active {
+      box-shadow: inset 2px 2px 2px #999;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .icon {
+      background-repeat: no-repeat;
+      background-size: 1.3rem;
+      background-position: center;
+    }
+
+    .icon-left {
+      background-position: 0.6em center;
+      padding-left: 2.3rem;
+    }
+
+    .icon-right {
+      background-position: 90% center;
+      padding-right:2.5rem;
+    }
+
+    .icon-only {
+      color: transparent;
+      font-size: 0;
+      width: 3rem;
+      height: 1.5rem;
+      display: inline-block;
+      overflow: hidden;
+      background-size: 1.2rem;
+    }
+
+    .icon-home {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAB6klEQVRoQ+2YjU0DMQyF6QYwCbBB2QAmADaASWAD2AA2oBsAk8AG4FedSwhJbJe4OYQjVafeWfH7/JNzu9jzXfu0/cPk4oyu717uFl4b076AeKLP0eTjha4nXjCeIM8JBMcLMMcewfMCuSOxFxXB93T/sjeMB0gLgvV3h+kNooFowXxUMiXqFA0MJWCBqMEMB9kGogQzFOQ3EDkMeue8UAVi5YgGQmld0fMbQ/m1TK/p4S19SjCiTtGg4RnHK7LRc+FYBkgOI+oUDSoqPSDYVQlG1CkaFEA8IWowok7RIAPZBUQOs6IbS6l+LSC7hEhhHumLODVrQU5pMx7HpeD0fo6JGVlpLg0IxnCM4xjLRyxkAzCYnKtLAhkNwcJFmBbIXCBUMDWQuUGIMCWQuUI0YXKQuUNUYVKQ/M+CESeUxee3PzMYJIV4pd0OLTsOsGWNGxiA5BBLuvc2QJzF5QEZr6aAr2EAgpcdxIMSV5zZtV9qFmeetpwAhlnhBn7MAIAhIOAvgEAnqgkwa5DS2gZEmhJqGeriK0AK4eWgaCNstU9d/kiAR0YCxHDMRUY0wbLWvNU+ekSThVKUotkNkYtm1wTL2rxW+2h2TRai2SkCUVpJEDYVEUNjjPFfEYgeiR5RvlCspWK1/x9v9k/lhJeSM/PQZwAAAABJRU5ErkJggg==");
+    }
+
+    .icon-plus {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAzUlEQVRoQ+2YbQqAIBBE62TVyauT9QERJSEz0ErY87fsOm/HQWybSlZbiY4GIV+bZPRExkTwEAUgWsiSHDysX1jhQwBCXAsyEZEY1hJBnduwlkgMa4mgsJYLCmu5xEgtkRjWEkGRWi4orOUSe0qtaSvSuYUK75+3fv21J0IKTyBt96+JvAmb1HJp8tYSiWEtERRvLRcU1nKJkVoiMawlgiK1XFBYyyVGaonEsJYIitRyQe0/Mtd1+/lwi+X2R1/2N8+arYWQYqjFRtVMZAW9qi4zVfzD6gAAAABJRU5ErkJggg==");
+    }
+
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+
+        border: 1px solid black;
+        background: #e7dada;
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+        border-radius: 50%;
+        transition: all 0.5s;
+    }
+
+    input[type="checkbox"]:checked {
+        background-color: red;
+        width: 2em;
+        height: 2em;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 aria-hidden="false">Main Heading</h1>
+  <h2>Sub Heading</h2>
+  <p>Click Me:
+    <button class="hide" onclick="alert('BOO')">HI</button>
+  </p>
+  <p class="accesible-hide">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <form>
+    <label for="search">Search: </label>
+    <input type="search" name="search" placeholder="Search...">
+    <input type="text" placeholder="Email address">
+    <p>
+      <input type="button" value="Click Me">
+      <button ontouchstart="">Clicke Me!!</button>
+      <a href="#" class="btn">Click Me from Link</a>
+    </p>
+    <p>
+        <a href="#" class="btn icon icon-home icon-only">Some Text</a>
+    </p>
+    <p>
+        <label>
+            <input type="checkbox" /> I like pies
+        </label>
+    </p>
+  </form>
+</body>
+
+</html>

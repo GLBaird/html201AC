@@ -1,12 +1,22 @@
+/* Load webfonts */
+@import url(../fonts/bilbo/stylesheet.css);
+@import url(../fonts/bpscript_regular_macroman/stylesheet.css);
+@import url(../fonts/destroy_regular_macroman/stylesheet.css);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
 
 h1 {
-  font-family:
+  font-family: destroyregular, Helvetica, Arial, sans-serif;
 }
 
 h2 {
-  font-family:
+  font-family: bpscriptregular, Helvetica, Arial, sans-serif;
+}
+
+h3 {
+  font-size: 3em;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 p {
-  font-family:
+  font-family: bilboregular, Helvetica, Arial, sans-serif;
 }
