@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Mrs Christine Cagney",
+      "address": "123 Large House Lane"
+    },
+    {
+      "id": 2,
+      "name": "Some other person",
+      "address": "Cell Block H, Row 22, HM Prison Australia"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Hans Reinhardt",
+      "address": "U.S.S. Cygnus, Next to the Black Hole"
+    },
+    {
+      "id": 4,
+      "name": "Endeavour Morse",
+      "address": "Oxford"
+    },
+    {
+      "id": 50,
+      "name": "Leon Baird",
+      "address": "300 Pie Eater Lane"
+    }
+  ]
+}
